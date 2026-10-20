@@ -1,0 +1,15 @@
+# dsh bundle patch —— 把插件插入 profile 的层栈
+# 注意：insert 的 name 必须是 npm 包名（dsh-memory-lite）；id 保持 dsh-memory 以稳定行标识
+- insert:
+    - id: dsh-memory
+      name: dsh-memory-lite
+      config:
+        enabled: true
+        ui: collapsed          # collapsed（默认）/ visible / hidden
+        retrieval:
+          budgetTokens: 600
+          topK: 6
+        extraction:
+          enabled: true
+          minTurnsBetweenExtractions: 3
+          maxConcurrent: 1

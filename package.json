@@ -1,0 +1,51 @@
+{
+  "name": "dsh-memory-lite",
+  "version": "0.1.0",
+  "description": "Lightweight cross-session fact memory for DeepSeek Harness — budgeted retrieval, no dependencies, no model download.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "author": "dsh-memory-lite contributors",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "context",
+    "bm25"
+  ],
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible"
+      }
+    }
+  }
+}
