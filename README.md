@@ -85,6 +85,12 @@ JSONL 是唯一真源，删掉即清空。工作区键 = 规范化路径（小�
 npm test          # node --test（18 个用例，覆盖存储/检索/解析）
 ```
 
+## 文档
+
+- [设计文档](docs/dsh-memory-plugin-design.md) — 为什么这么设计：机制盘点、注入策略、风险登记册
+- [实现规格](docs/dsh-memory-impl-spec.md) — 文件级规格，以及这一路踩过的坑（cordis 服务注入、工作区键、客户端半侧）
+- [发布说明](docs/dsh-memory-lite-publish.md) — 安装、完整配置、**已验证项清单**
+
 实测记录（0.2.1-rc.2，Windows）：
 
 - 插件加载、工具注册、`remember/search`、自动注入均已实机跑通；
