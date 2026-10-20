@@ -11,7 +11,15 @@
     "./package.json": "./package.json"
   },
   "license": "MIT",
-  "author": "dsh-memory-lite contributors",
+  "author": "kunchenghanbao",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunchenghanbao/dsh-memory-lite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kunchenghanbao/dsh-memory-lite/issues"
+  },
+  "homepage": "https://github.com/kunchenghanbao/dsh-memory-lite#readme",
   "engines": {
     "node": ">=22"
   },
